@@ -1,4 +1,4 @@
-const totalPages = 8;
+const totalPages = 9;
 let currentPage = 1;
 
 // Seleção de elementos
@@ -28,7 +28,7 @@ function updatePage() {
         if (currentPage === 2) {
             bus.style.display = 'block';
             bus.style.left = '7%'; 
-            bus.style.top = '55%';
+            bus.style.top = '50%';
             bus.style.bottom = 'auto';
             holdBtn.style.display = 'none';
         } 

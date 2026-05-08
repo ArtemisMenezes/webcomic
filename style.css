@@ -105,7 +105,7 @@ h1 {
 #bus-interativo {
     position: absolute;
     width: 45%;
-    top: 55%;  
+    top: 50%;  
     left: 7%; 
     cursor: grab;
     display: none;
