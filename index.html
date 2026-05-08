@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitor de Banda Desenhada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="comic-viewer">
+        <h1>Herois</h1>
+        
+        <div class="viewport">
+            <!-- As imagens devem estar na mesma pasta com estes nomes -->
+            <img id="comic-image" src="1.png" alt="Página do Quadrinho">
+            <img id="bus-interativo" src="bus.png" alt="Ônibus arrastável" draggable="false">
+            <button id="hold-btn" class="hold-action">
+                <span class="hold-text">Segure para Ajudar!</span>
+                <div class="hold-progress"></div>
+            </button>
+            <!-- Botões de navegação sobrepostos -->
+            <button id="prev-btn" class="nav-arrow left" aria-label="Página anterior">&#10094;</button>
+            <button id="next-btn" class="nav-arrow right" aria-label="Próxima página">&#10095;</button>
+        </div>
+
+        <div class="controls">
+            <p>Página <span id="page-number">1</span> de 8</p>
+            <div class="progress-bar">
+                <div id="progress-fill" class="progress-fill"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
